@@ -1,0 +1,1 @@
+Archivo de configuración para el envío de mails, el acceso a la BD y el hashing

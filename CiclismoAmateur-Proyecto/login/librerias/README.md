@@ -1,0 +1,1 @@
+Librerias necesarias para correr la app. De momento solo se usan para el envío de mails y el manejo de passwords hasheadas.
