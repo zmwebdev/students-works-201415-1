@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Modificar receta </title>
+		
+		<!-- Importamos el estilo css -->
+		<link rel="stylesheet" href="css/profile.css" /> 
+
+	</head>
+
+	<body>
+		<div id="container">
+
+			<% include menu_nav.html %>
+
+			<div id="titulo">
+
+				<h1> Modificar datos </h1>
+
+			</div>  <!-- Cierre del titulo -->
+
+			<!-- INFORMACIÓN DE LA RECETA A MODIFICAR-->
+			<form id="modificarForm" action="/recetaModificada" method="post">
+
+				<div class="nombre">
+							<label> Nombre </label> <br />
+							<input type="text" name="nombre" value="<%= receta.nombre %>">
+				</div> <!-- Cierre del nombre -->
+
+				<div class="ingredientes">
+							<label> Ingredientes </label> <br />
+							<input type="text" name="ingredientes" value="<%= receta.ingredientes %>">
+
+				</div> <!-- Cierre del ingredientes -->
+
+				<button type="submit"> 	Modificar </button><br /><br />
+
+			</form> <!-- Cierre del formulario de receta -->
+
+		</div> <!-- Cierre del container -->
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- https://developer.salesforce.com/page/Google_Calendar_API#Authenticating_to_the_Calendar_service -->
+<!-- https://github.com/google/google-api-nodejs-client -->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/favicon.ico">
+<!--<link rel="shortcut icon" href="http://XXXXrutaXXXX/favicon.ico">-->
+<title>Fiestuky</title>
+<link href="css/pagina.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./server.js"></script>
+<script type="text/javascript">
+tday=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado");
+tmonth=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear(),nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+     if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nyear<1000) nyear+=1900;
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+ndate+" de "+tmonth[nmonth]+" de "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+<!-- Elementos de Discotecas -->
+
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function toggle_visibility(id) {
+  $(".list").hide();
+  $("#" + id).toggle();
+}
+</script>
+</head>
+<body>
+
+<section id="logo-wrap">
+	<div id="logo">
+		<a href="pagina.html">
+			<h1> Fiestuky </h1>
+			<h2> pasarlo bien nunca esta demás</h2>
+		</a>
+	</div>
+	<div id="centro"></div>
+	<div id="clockbox"></div>
+</section>
+
+<div id="lateral">
+<div id="barra_menu">
+	<li>
+		<ul><a class="menu" href="perfil.html"><img src="../images/user.gif">  Perfil</a></ul>
+		<ul><a class="menu" href="eventos.html"><img src="../images/calendar.gif">  Eventos</a></ul>
+		<ul><a class="menu" href="galeria.html"><img src="../images/open-folder.gif">  Galería</a></ul>
+		<ul><a class="menu" href="amigos.html"><img src="../images/amigos.png"> Amigos</a></ul>
+		<ul><a class="menu" href="configuracion.html"><img src="../images/flag.gif">  Configuración</a></ul>
+		<ul><a action="/logout" method="get" class="menu" href=""><img src="../images/key.gif">  Salir</a></ul>
+	</li>
+</div>
+<div id="sub_barra_menu">
+	<li id="search">
+		<h3>Busqueda</h3>
+		<form id="searchform" method="get" action="">
+			<fieldset>
+			<input type="text" name="s" id="txt" size="15" value="" placeholder="Nombre de Amig@"/>
+			<input type="submit" id="btn" value="Buscar" />
+			</fieldset>
+		</form>
+	</li>
+	
+	<li id="calendario">
+	<!--CALENADRIO
+	<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ikzubirimanteo.com_guv48jh017v90oenu2a7hk94f0%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid" style=" border:solid 1px #777 " width="235" height="300" frameborder="0" scrolling="no"></iframe>
+	<!-- google calendar -->
+	</li>
+</div>
+</div>
+<div id="contenido">
+<h2 id="titulo_cuerpo">Discotecas</h2>
+<li class="comu_auto">Euskal Herria
+	<a href="#Gipuzkoa" onclick="toggle_visibility('list1');">
+	  <p class="provincia">Gipuzkoa</p>
+	</a>
+	<div id="list1" class="alist" style="display:none;">
+	  <ul>
+		<li><a href="https://www.facebook.com/arraun.donosti">Arraun</a></li>
+		<li><a href="http://bataplandisco.com/">Bataplán</a></li>
+		<li><a href="https://www.facebook.com/bebopbardonostia">Be Bop</a></li>
+		<li><a href="https://www.facebook.com/pages/Le-Bukowski/186625226388?directed_target_id=0">Bukowski</a></li>
+		<li>Badabada</li>
+		<li><a href="http://www.etxekalte.com/Etxekalte___Programazioa.html">Etxekalte</a></li>
+		<li>Gure Leku</li>
+		<li><a href="http://www.inoxdisco.com/">Inox Disko</a></li>
+		<li><a href="https://www.facebook.com/komplot">Komplot</a></li>
+		<li>Lokotx</li>
+		<li>News Guass</li>
+		<li><a href="https://www.facebook.com/sala.pagoa">Pagoa</a></li>
+		<li><a href="http://www.txitxarro.com/">Txitxarro</a></li>
+	  </ul>
+	</div>
+	<a href="#Bizkaia" onclick="toggle_visibility('list2');">
+	  <p class="provincia">Bizkaia</p>
+	</a>
+	<div id="list2" class="alist" style="display:none;">
+	  <ul>
+		<li>Bamboo Terraza</li>
+		<li><a href="http://www.concept-club.com/">Conpect Club</a></li>
+		<li>Conjunto Vacio</li>
+		<li><a href="https://www.facebook.com/Distrito9Bilbao">Distrito 9</a></li>
+		<li>El Balcón de la Lola</li>
+		<li><a href="http://www.fever.es/">Fever</a></li>
+		<li><a href="http://www.kafeantzokia.com/">Kafé Antzokia</a></li>
+		<li>Revolution</li>
+		<li><a href="http://www.salarockstar.com/">Rock Star</a></li>
+		<li>Sorona</li>
+		<li><a href="http://www.salasonora.com/">Sweet & Vicious</a></li>
+		<li>The Loft</li>
+	  </ul>
+	</div>
+	<a href="#Araba" onclick="toggle_visibility('list3');">
+	  <p class="provincia">Araba</p>
+	</a>
+	<div id="list3" class="alist" style="display:none;">
+	  <ul>
+		<li>Cafe Dublin</li>
+		<li>Darkablar</li>
+		<li>El Jardín de Falerina</a></li>
+		<li><a href="http://jimmyjazzgasteiz.com/eu/">Jimmy Jazz</a></li>
+		<li><a href="https://www.facebook.com/kubikvitoria">Kubik</a></li>
+		<li><a href="">OM Café & Club</a></li>
+	  </ul>
+	</div>
+	<a href="#Nafarroa" onclick="toggle_visibility('list4');">
+	  <p class="provincia">Nafarroa</p>
+	</a>
+	<div id="list4" class="alist" style="display:none;">
+	  <ul>
+		<li><a href="https://twitter.com/MoviePamplona">Movie Music Club</a></li>
+		<li><a href="https://www.facebook.com/Txuribeltz.Club">Txuribeltz</a></li>
+		<li>La Urbana</li>
+		<li>Nicollette</li>
+		<li><a href="https://www.facebook.com/pages/Katos-Disco/146507258709600">Kato's Disco</a></li>
+		<li><a href="https://www.facebook.com/pages/MOMOBAR/154695743825">Momo</a></li>
+		<li><a href="www.noboomusic.com/">Noboo</a></li>
+	  </ul>
+	</div>
+</li>
+
+<!--
+<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ikzubirimanteo.com_guv48jh017v90oenu2a7hk94f0%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FMadrid" style=" border-width:0 " width="600" height="400" frameborder="0" scrolling="no"></iframe>
+-->
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf8" />
+		<title> FoodJoy</title>
+
+		<!-- Importar funciones de JavaScript-->
+		<script type="text/javascript" src="js/formulario.js"></script>
+
+		<!-- Importamos jQuery -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<!-- Importamos el estilo css -->
+		<link rel="stylesheet" href="css/main.css" /> 
+
+		<!-- Función de jQuery -->
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				//Obtenemos el id del input
+				var x=$("#userSign");
+
+				x.click(desaparecerLogin);
+
+				x=$("#userLogin");
+
+				x.click(desaparecerSign);
+
+			});
+
+			function desaparecerLogin(){
+
+
+				$("#login").css('visibility', 'hidden');
+
+			}
+
+			function desaparecerSign(){
+
+				$("#registro").css('visibility', 'hidden');
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<section class="bloque">
+
+				<!-- FORMULARIO DE REGISTRO -->
+				<div class="columna" id="registro">
+
+					<form action="/signup" method="post">
+
+						<h1> Registro </h1>
+
+						<div class="usuario">
+							<label> Usuario </label> <br />
+							<input type="text" id="userSign" name="email" onFocus="entrarFoco(this)" onBlur="salirFoco(this); revisarObligatorio(this)">
+						</div> <!-- Cierre del usuario-->
+
+						<div class="password">
+							<label> Contraseña </label> <br />
+							<input type="password" name="password" onFocus="entrarFoco(this)" onBlur="salirFoco(this); revisarObligatorio(this)">
+						</div> <!-- Cierre del password-->
+
+						<button type="submit"> Registrarse </button>
+
+					</form>
+
+				</div> <!-- Cierre del registro-->
+
+				<div class="columna">
+
+					<h1> FOOD JOY </h1>
+
+				</div> <!-- Cierre del titulo-->
+				
+
+				<!-- FORMULARIO DE LOGIN -->
+				<div class="columna" id="login">
+					
+					<form action="/login" method="post">
+
+						<h1> Login </h1>
+
+						<div class="usuario">
+							<label> Usuario </label> <br />
+							<input type="text" id="userLogin" id="email" name="email" onFocus="entrarFoco(this)" onBlur="salirFoco(this); revisarObligatorio(this)">
+						</div> <!-- Cierre del usuario-->
+
+						<div class="password">
+							<label> Contraseña </label> <br />
+							<input type="password" id="password" name="password" onFocus="entrarFoco(this)" onBlur="salirFoco(this); revisarObligatorio(this)">
+						</div> <!-- Cierre del password-->
+
+						<button type="submit">Login</button>
+
+					</form>
+
+				</div> <!-- Cierre del login-->
+
+			</section> <!-- Cierre del bloque-->
+
+		</div> <!-- Cierre del div container -->
+
+	</body>
+</html>

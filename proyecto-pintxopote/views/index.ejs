@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>The Pintxopo</title>
+
+		<meta charset="utf-8"/>
+
+		<!--Estilos principales-->
+		<link rel="stylesheet" type="text/css" href="css/main.css" >	
+		<link href='https://fonts.googleapis.com/css?family=Lora|PT+Sans+Narrow|Old+Standard+TT:400italic,400|Tangerine|Open+Sans+Condensed:300|Courgette' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTcGmuWEwzwZXpcYRMguIQoWAc7yrw6Kc&sensor=false"></script>
+		
+		<script src="js/pintxos.js" type="text/javascript"></script>
+		<script src="js/scrollAnimado.js" type="text/javascript"></script>
+		<script src="js/cambioMenu.js" type="text/javascript"></script>
+		<script src="js/homeButtonScroll.js" type="text/javascript"></script>
+		<script src="js/animacionRedes.js" type="text/javascript"></script>
+		<script src="js/googleMap.js" type="text/javascript"></script>
+		<script src="js/calcRutas.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+
+		<header class="mainHeader">	
+			
+			<nav class="menu">
+				<ul class="navegador">
+					<li class="active"><a class="homeButton" href="">HOME</a></li>
+					<li><a class="ancla" href="#ruta">RUTAS</a></li>
+					<li><a class="ancla" href="#pintxos">PINTXOS</a></li>
+				</ul>				
+			</nav>
+
+			<nav class="menu2">
+				<ul class="navegador">
+					<li><a class="ancla" href="#bares">BARES</a></li>
+					<li><a class="ancla" href="#calendario">CALENDARIO</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>				
+			</nav>
+
+			<div class="logo">
+				<a class="homeButton" href=""><img src="img/logo_trazado_recortado.png" /></a>
+			</div>
+
+		</header>
+
+		<div class="mainSection">
+			<div class="bienvenida">
+				<h2>La cultura del ocio gastronómico</h2>
+				<p>El sibaritismo gastronómico, unido a la inteligencia contribuye a hacer a los hombres amables.</p>
+			</div>
+			
+			<div class="container-login">
+				<div class="content">
+					<p>Inicia sesión o regístrate:</p>
+					<div class="boton-log"><a href="/login" class="boton_form"><span class="fa fa-user"></span>Inicia sesión</a></div>
+					<div class="boton-log"><a href="/signup" class="boton_form"><span class="fa fa-user"></span>Regístrate<a></div>
+				</div>
+			</div>	
+
+			<div>
+				<nav class="navRedes">
+					<ul>						
+						<li><a href="#"><img src="img/facebook.png" ></a></li>
+						<li><a href="#"><img src="img/google_plus.png"></a></li>
+						<li><a href="#"><img src="img/twitter.png" ></a></li>
+						<li><a href="#"><img src="img/pinterest.png" ></a></li>
+					</ul>				
+				</nav>
+			</div>
+			
+			<div id="rutas">
+			
+				<div id="ruta">
+					<div>
+						<h1>Rutas</h1>
+						<h2>Ofrecemos las mejores rutas por cada barrio</h2>
+						<div id="googleMap">
+						</div>
+					</div>
+				</div>
+				
+				<nav class="navRutas">
+					<ul>						
+						<li><a href="#ruta" class="ancla" id="btn1">RUTA 1</a></li>
+						<li><a href="#ruta" class="ancla" id="btn2">RUTA 2</a></li>
+						<li><a href="#ruta" class="ancla" id="btn3">RUTA 3</a></li>
+					</ul>				
+				</nav>
+			
+			</div>
+			
+			<div class="secciones">
+				
+				<div id="pintxos">
+					
+				</div>
+				
+				<div id="bares">
+					<div>
+						<h1>Bares... ¡Qué lugares!</h1>
+						<h2>Encuentra los mejores sitios</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				
+				<div id="calendario">
+					<div>
+						<h1>Calendario</h1>
+						<h2>Organiza tu pintxopote</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div>
+				
+			<nav class="navRedesLateral">
+				<ul>				
+					<li><a href="#"><img src="img/facebook.png" ></a></li>
+					<li><a href="#"><img src="img/google_plus.png"></a></li>
+					<li><a href="#"><img src="img/twitter.png" ></a></li>
+					<li><a href="#"><img src="img/pinterest.png" ></a></li>
+				</ul>				
+			</nav>
+			
+		</div>
+		
+		
+
+	</body>
+
+</html>

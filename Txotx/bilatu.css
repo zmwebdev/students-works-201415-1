@@ -1,0 +1,90 @@
+body{
+	font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+#bilatu{
+	background-color: white;
+	position: relative;
+	color: green;
+	border: 0px;
+}
+#menu_txikia{
+	margin-top: 3px;
+}
+#logo{
+	position: relative;
+	top: 5%;
+	left: 1%;
+	width: 80px;
+	height: 80px;
+}
+#header h1{
+	color: black;
+	font-size: 48px;
+	position: absolute;
+	left: 100px;
+	top: 60px;
+}
+#hizkuntzak li{
+    display:inline-block;
+    float: left;
+    padding: 10px;
+    color: white;
+}
+#top_header li{
+    display:inline-block;
+    float: right;
+    padding: 10px;
+}
+#registro{
+    background-color: green;
+    display: block;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 10px;
+}
+#registro a{
+	color: white;
+	font-style: italic;
+}
+#registro a:hover{
+	color: grey;
+}
+#izena{
+	border: 2px solid black;
+	display: -webkit-box;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 0%;
+	width: auto;
+	height: 20px;
+	-webkit-box-flex: 2;
+	-webkit-border-radius: 10px; /* 5px 10px para hacerlo asimetrico*/
+	background: -webkit-linear-gradient(right, white 25%, green 75%);
+	/*-webkit-box-shadow: rgba(110,110,110, 0.7) 10px 10px 10px; 
+	rgb(a): es la intensidad de la sombra. LO MISMO CON inset al final para hacerla sombra dentro*/
+}
+a{
+	color: black;
+}
+a:hover{
+	color: white;
+}
+#sagar_ize{
+	background-color: green;
+	border: 0px;
+	font-family: 'Ubuntu', 'Lato', sans-serif;
+	font-size: 18px;
+	color: white;
+}
+#sagar_ize:hover{
+	color: purple;
+}
+/*@media all and(max-width: 900px){
+	#header h1{
+		color: black;
+		font-size: 48px;
+		position: absolute;
+		left: 1%;
+		top: 10%;
+	}
+}*/

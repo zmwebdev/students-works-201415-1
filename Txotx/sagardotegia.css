@@ -1,0 +1,71 @@
+#hizkuntzak li{
+    display:inline-block;
+    float: left;
+    padding: 10px;
+    color: white;
+}
+#top_header li{
+    display:inline-block;
+    float: right;
+    padding: 10px;
+}
+#registro{
+    background-color: green;
+    display: block;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 10px;
+}
+#registro a{
+	color: white;
+	font-style: italic;
+}
+#registro a:hover{
+	color: grey;
+}
+#izena{
+	position: relative;
+	border: 2px solid black;
+	display: -webkit-box;
+	padding: 10px;
+	margin: auto;
+	margin-left: 0px;
+	width: 97%;
+	height: 20px;
+	-webkit-box-flex: 2;
+	-webkit-border-radius: 10px; /* 5px 10px para hacerlo asimetrico*/
+	background: -webkit-linear-gradient(right, white 25%, green 75%);
+}
+#izena h1{
+	margin-top: -10px;
+}
+#menu_txiki_herria{
+	background-color: white;
+	position: relative;
+	top: 5px;
+	color: green;
+	border: 0px;
+}
+#menu_txiki_izena{
+	color: green;
+	font-size: 14px;
+	position: relative;
+	top: 5px;
+	left: -10px;
+}
+#map_canvas{
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+#nork{
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	display: -webkit-box;
+	padding: 8px;
+	margin: auto;
+	margin-left: 0px;
+	width: auto;
+	height: 10px;
+	-webkit-border-radius: 10px;
+}

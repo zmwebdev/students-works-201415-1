@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Pre-Fiestuky</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./server.js"></script>
+</head>
+<body>
+
+<div id="main">
+	<div class="logo">
+	</div>
+	<div id="centro">
+		<section id="log">
+			<form action="/login" method="post">
+				<div id="username">
+					<label>Nombre de usuario:</label><br>
+					<input class='txtarea' type="text" name="username"/>
+				</div>
+				<div id="password">
+					<label>Contraseña:</label><br>
+					<input class='txtarea' type="password" name="password"/>
+				</div>
+				<div><br>
+					<input class="buttons" type="submit" value="Iniciar Sesión" action="pagina.html"/>
+				</div>
+				<div><br>
+					<p id="olvidar"><a class="olvidar" href="">¿has olvidado la contraseña?</a></p>
+				</div>
+			</form>
+		</section>
+		<section id="middle">
+		
+		</section>
+		<section id="register">
+			<form action="/register" method="post">
+				<div id="username2">
+					<label id="txt">Nombre de usuario:</label><br>
+					<input class='txtarea' type="text" name="user2"/>
+				</div>
+				<div id="password2">
+					<label>Contraseña:</label><br>
+					<input class='txtarea' type="password" name="pass2"/>
+				</div>
+				<div id="pass2">
+					<label>Confirmar Contraseña:</label><br>
+					<input class='txtarea' type="password" name="pass3"/>
+				</div>
+				<div id="mail">
+					<label>E-Mail:</label><br>
+					<input class='txtarea' type="text" name="mail"/>
+				</div>
+				<div><br>
+					<input class="buttons" type="submit" value="Registro"/>
+				</div>
+			</form>
+		</section>
+	</div>
+	<footer id="the_footer">
+		Copyright 2014-2015©
+	</footer>
+</div>
+
+
+
+</body>
+</html>	

@@ -1,0 +1,297 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Arial, 'Lucida Sans Unicode';
+	background-image: url('/img/pintxos.jpg'); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	height: auto;
+	top: 0;
+	background-color: #FFF;
+	box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+	z-index: 10;
+}
+
+.logo {
+	max-width: 10%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.5%;
+	margin-bottom: 1%;
+}
+
+.logo img {
+	width: 100%;
+	max-height: 80px;
+}
+
+.mainHeader nav {	
+	height: 2%;	
+	margin-top: 2%;
+	font-weight: bold;
+}
+
+.menu {
+	float: left;
+	margin-left: 5%;
+}
+
+.menu2 {
+	float: right;
+	margin-right: 5%;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav ul li a {
+	text-decoration: none;
+	font-size: 90%;
+	line-height: 0.1;
+	outline: none;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	display: inline-block;
+	color: #303030;
+	padding: 10px 40px;
+	height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	text-shadow: none;
+	color: #FF9933;
+}
+
+.mainSection {
+	margin-top: 10%;
+}
+
+.bienvenida {
+	width: 50%;
+	margin: 16% 0 4% 25%;
+	color: #FFF;
+	text-align: center;
+	font-size: 200%;
+}
+
+.bienvenida h2 {
+	font-family: 'Lora', serif;
+	font-size: 150%;
+}
+
+.bienvenida p {
+	font-style: italic;
+	font-family: 'Old Standard TT', serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.container-login {
+	margin: 0 auto;
+	padding-top: 0.5%;
+	width: 25%;
+	height: 75px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background-color: rgba(245, 255, 250, 0.35);
+	color: #101010;
+}
+.content a{
+	color:#303030;
+}
+
+.boton-log{
+	margin: 0 5% 0 5%;
+	padding: 1% ;
+	width: 40%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8)
+}
+
+.boton-log span{
+	margin-right: 3%; 
+}
+
+.navRedes {
+	width: 36%;
+	margin: 4% 0 7% 32%;
+}
+
+.navRedes img {
+	width: 8.5%;
+}
+
+.navRedes ul {
+	list-style: none;
+}
+
+.navRedes ul li {
+	display: inline;
+	margin-left: 10.5%;
+}  
+
+#rutas {
+	width: 86%;
+	margin: 0 0 3% 7%;
+	height: 540px;
+	background-color: #FFF;
+}
+
+#rutas ul {
+	list-style: none;
+}
+
+#rutas li {
+	display: inline;
+	margin-right: 20px;
+}
+#rutas h1{
+	padding: 1% 0 0 0;
+	font-family: 'Old Standard TT', serif;
+	color: #303030;
+	text-align: center;
+	font-size: 250%;
+	font-weight: 400;
+}
+
+#rutas h2{
+	font-family: 'Tangerine', cursive;
+	color: #303030;
+	text-align: center;
+	font-size: 200%;
+	font-weight: 400;
+}
+
+#googleMap {
+	width: 96%;
+	margin-left: 2%;
+	height: 410px;
+}
+
+.secciones {	
+	margin-left: 7%;
+	width: 86%;
+	margin-top: 2%;	
+}
+
+.secciones div {
+	margin-bottom: 3%;
+	width: 100%;
+	/*background-color: #FFF;*/	
+}
+
+.secciones h1 {
+	padding: 3% 0 0 0;
+	font-family: 'Old Standard TT', serif;
+	color: #303030;
+	text-align: center;
+	font-size: 250%;
+	font-weight: 400;
+	/*background-color: #FFF;*/
+}
+
+.secciones h2 {
+	padding: 0 0 2% 0;
+	font-family: 'Tangerine', cursive;
+	color: #303030;
+	text-align: center;
+	font-size: 200%;
+	font-weight: 400;
+}
+
+.secciones p {
+	padding: 5% 5% 1% 5%;
+}
+
+#pintxos {
+    background-color: transparent;
+}
+
+#pintxos div {
+	background-color: #FFF;
+}
+
+#bares {
+    background-color: transparent;
+}
+
+#bares div {
+	background-color: #FFF;
+}
+
+#calendario {
+    background-color: transparent;
+}
+
+#calendario div {
+	background-color: #FFF;
+}
+
+#pintxos article {
+	margin: 3% 0 4% 3.8%;
+	display: inline-block;
+	width: 20%;
+	height: 300px;
+	text-align: center;
+	box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.75);
+	overflow: hidden;
+}
+
+#pintxos article img {
+	width: 100%;
+	max-height: 160px;
+}
+
+#pintxos h3 {
+	margin: 5% 0 3% 0; 	
+	font-family: 'Lora', serif;
+	color: #303030;
+}
+
+#pintxos p {
+	padding: 2%;	
+	font-size: 90%;
+	font-family: 'Courgette', cursive;
+	color: #797070;
+}
+
+.navRedesLateral {
+	position: fixed;
+	top: 45%;
+	width: 7%;
+}
+
+.navRedesLateral ul {
+	list-style: none;
+}
+
+.navRedesLateral img {
+	width: 40%;
+}
+
+.navRedesLateral ul li {
+	margin-top: 10px;
+	margin-left: -10px;
+}

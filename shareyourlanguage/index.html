@@ -1,0 +1,76 @@
+<!doctype html>
+ <html>
+
+   <head>
+      <meta charset="utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--<meta http-equiv="Refresh" content="3;url=#inicio">-->
+      <script type="text/javascript">
+function redireccionar(){
+  window.location="#inicio";
+} 
+setTimeout ('redireccionar()', 1000); //tiempo expresado en milisegundos
+</script>
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="themes/proyecto.min.css">
+<link href="jq/jquery.mobile.custom.structure.min.css" rel="stylesheet" type="text/css"/>
+<script src="jq/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="jq/jquery.mobile.custom.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+
+     $(window).resize(function(){
+ 
+          // aquí le pasamos la clase o id de nuestro div a centrar (en este caso "caja")
+          $('#logo').css({
+               position:'relative',
+               top: ($(window).height() - $('#logo').outerHeight())/2
+          });
+       
+    });
+
+// Ejecutamos la función
+$(window).resize();
+ 
+})
+</script>
+<style type="text/css">
+body {
+	text-align:center;
+}
+#logo{
+	margin:auto;}
+</style>
+   </head>
+
+   <body>
+   	<!--index pagina principal, selección de idiomas-->
+		<div data-role="page" id="index" data-theme="a">
+			<img src="img/logo.png" id="logo" />
+		</div>
+	<!--FIN DE CARGA DEL LOGO-->
+
+	<!--Web para móviles-->
+		<!-- Página Inicio-->
+		<div data-role="page" id="inicio">
+		<!--contenido-->
+			<div data-role="content" data-theme="a">
+				<img src="img/logo.png" width="60%"/>
+				<form class="ui-content">
+					<input type="text" placeholder="User...">
+					<input type="password" placeholder="Password...">
+					<label for="switch">Remenber me</label>
+        			<input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+					<div data-role="controlgroup" data-type="horizontal" data-theme="c"><br>
+					  <button>Sign in</button>
+					  <button>Register</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+   </body>
+
+ </html>

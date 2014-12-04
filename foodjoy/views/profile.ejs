@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Perfil de usuario </title>
+
+		<!-- Importamos el estilo css -->
+		<link rel="stylesheet" href="css/profile.css" /> 
+
+		<style type="text/css">
+
+			input {
+
+				width: 200px;
+	
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container">
+
+			<% include menu_nav.html %>
+
+			<div id="user">
+
+				<h1><%= user.local.email %></h1>
+				
+			</div> <!-- Cierre del user -->
+
+			<section class="seccion">
+			
+				<!-- Formulario para añadir las recetas-->
+				<div class="columna">
+
+					<form action="/agregarRecetas" method="post">
+
+						<h3> Añadir </h3>
+
+						<div class="nombre">
+								<label> Nombre </label> <br />
+								<input type="text" name="nombre">
+						</div> <!-- Cierre del nombre-->
+
+						<div class="ingredientes">
+								<label> Ingredientes </label> <br />
+								<input type="text" name="ingredientes">
+						</div> <!-- Cierre del ingredientes-->
+
+						<button type="submit"> Añadir </button>
+
+					</form>
+
+				</div> <!-- Cierre del añadirRecetas -->
+
+				
+				<!-- Formulario para modificar las recetas-->
+				<div class="columna">
+
+					<form action="/modificarRecetas" method="post">
+
+						<h3> Modificar </h3>
+
+						<div class="nombre">
+								<label> Nombre </label> <br />
+								<input type="text" name="nombre">
+						</div> <!-- Cierre del nombre-->
+
+
+						<button type="submit"> Buscar </button>
+
+					</form>
+
+				</div> <!-- Cierre de modificarRecetas -->
+
+
+				<!-- Formulario para borrar las recetas-->
+				<div class="columna">
+
+					<form action="/borrarRecetas" method="post">
+
+						<h3> Borrar </h3>
+
+						<div class="nombre">
+								<label> Nombre </label> <br />
+								<input type="text" name="nombre">
+						</div> <!-- Cierre del nombre-->
+
+
+						<button type="submit"> Borrar </button>
+
+					</form>
+
+				</div> <!-- Cierre de borrarRecetas -->
+			
+			</section> <!-- Cierre del bloque-->
+
+		</div> <!-- Cierre del container -->
+	</body>
+</html>

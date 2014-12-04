@@ -1,0 +1,320 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nodemonnpm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'sequelize' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'nodemonnpm', null ]
+6 verbose cache add name=undefined spec="nodemonnpm" args=["nodemonnpm",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'nodemonnpm',
+7 verbose parsed url   path: 'nodemonnpm',
+7 verbose parsed url   href: 'nodemonnpm' }
+8 verbose cache add [ 'install', null ]
+9 verbose cache add name=undefined spec="install" args=["install",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'install',
+10 verbose parsed url   path: 'install',
+10 verbose parsed url   href: 'install' }
+11 verbose cache add [ 'sequelize', null ]
+12 verbose cache add name=undefined spec="sequelize" args=["sequelize",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'sequelize',
+13 verbose parsed url   path: 'sequelize',
+13 verbose parsed url   href: 'sequelize' }
+14 silly lockFile 2cc15d45-nodemonnpm nodemonnpm
+15 verbose lock nodemonnpm /home/unai/.npm/2cc15d45-nodemonnpm.lock
+16 silly lockFile 89fb511f-install install
+17 verbose lock install /home/unai/.npm/89fb511f-install.lock
+18 silly lockFile 35595a70-sequelize sequelize
+19 verbose lock sequelize /home/unai/.npm/35595a70-sequelize.lock
+20 silly lockFile 2cc15d45-nodemonnpm nodemonnpm
+21 silly lockFile 2cc15d45-nodemonnpm nodemonnpm
+22 silly lockFile 89fb511f-install install
+23 silly lockFile 89fb511f-install install
+24 silly lockFile 35595a70-sequelize sequelize
+25 silly lockFile 35595a70-sequelize sequelize
+26 verbose addNamed [ 'nodemonnpm', '' ]
+27 verbose addNamed [ null, '*' ]
+28 silly lockFile 27a59379-nodemonnpm nodemonnpm@
+29 verbose lock nodemonnpm@ /home/unai/.npm/27a59379-nodemonnpm.lock
+30 verbose addNamed [ 'install', '' ]
+31 verbose addNamed [ null, '*' ]
+32 silly lockFile cadb329f-install install@
+33 verbose lock install@ /home/unai/.npm/cadb329f-install.lock
+34 verbose addNamed [ 'sequelize', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile 57143dcb-sequelize sequelize@
+37 verbose lock sequelize@ /home/unai/.npm/57143dcb-sequelize.lock
+38 silly addNameRange { name: 'nodemonnpm', range: '*', hasData: false }
+39 silly addNameRange { name: 'install', range: '*', hasData: false }
+40 verbose request where is /nodemonnpm
+41 verbose request registry https://registry.npmjs.org/
+42 verbose request id bb51602e61829d90
+43 verbose url raw /nodemonnpm
+44 verbose url resolving [ 'https://registry.npmjs.org/', './nodemonnpm' ]
+45 verbose url resolved https://registry.npmjs.org/nodemonnpm
+46 verbose request where is https://registry.npmjs.org/nodemonnpm
+47 info trying registry request attempt 1 at 09:20:57
+48 http GET https://registry.npmjs.org/nodemonnpm
+49 silly addNameRange { name: 'sequelize', range: '*', hasData: false }
+50 verbose request where is /install
+51 verbose request registry https://registry.npmjs.org/
+52 verbose url raw /install
+53 verbose url resolving [ 'https://registry.npmjs.org/', './install' ]
+54 verbose url resolved https://registry.npmjs.org/install
+55 verbose request where is https://registry.npmjs.org/install
+56 info trying registry request attempt 1 at 09:20:57
+57 http GET https://registry.npmjs.org/install
+58 verbose request where is /sequelize
+59 verbose request registry https://registry.npmjs.org/
+60 verbose url raw /sequelize
+61 verbose url resolving [ 'https://registry.npmjs.org/', './sequelize' ]
+62 verbose url resolved https://registry.npmjs.org/sequelize
+63 verbose request where is https://registry.npmjs.org/sequelize
+64 info trying registry request attempt 1 at 09:20:57
+65 verbose etag "WBRX2NWCVVRQGUSWFKPKVOIU"
+66 http GET https://registry.npmjs.org/sequelize
+67 http 304 https://registry.npmjs.org/sequelize
+68 silly registry.get cb [ 304,
+68 silly registry.get   { date: 'Mon, 10 Nov 2014 08:20:59 GMT',
+68 silly registry.get     server: 'Apache',
+68 silly registry.get     via: '1.1 varnish',
+68 silly registry.get     'last-modified': 'Mon, 10 Nov 2014 08:20:59 GMT',
+68 silly registry.get     'cache-control': 'max-age=60',
+68 silly registry.get     etag: '"WBRX2NWCVVRQGUSWFKPKVOIU"',
+68 silly registry.get     age: '0',
+68 silly registry.get     'x-served-by': 'cache-lcy1134-LCY',
+68 silly registry.get     'x-cache': 'HIT',
+68 silly registry.get     'x-cache-hits': '1',
+68 silly registry.get     'x-timer': 'S1415607659.577489,VS0,VE0',
+68 silly registry.get     vary: 'Accept',
+68 silly registry.get     'content-length': '0',
+68 silly registry.get     'keep-alive': 'timeout=10, max=50',
+68 silly registry.get     connection: 'Keep-Alive' } ]
+69 verbose etag https://registry.npmjs.org/sequelize from cache
+70 silly addNameRange number 2 { name: 'sequelize', range: '*', hasData: true }
+71 silly addNameRange versions [ 'sequelize',
+71 silly addNameRange   [ '0.2.2',
+71 silly addNameRange     '0.2.3',
+71 silly addNameRange     '0.2.4',
+71 silly addNameRange     '0.2.5',
+71 silly addNameRange     '0.2.6',
+71 silly addNameRange     '0.3.0',
+71 silly addNameRange     '0.4.0',
+71 silly addNameRange     '0.4.1',
+71 silly addNameRange     '0.4.2',
+71 silly addNameRange     '0.4.3',
+71 silly addNameRange     '1.0.0',
+71 silly addNameRange     '1.0.1',
+71 silly addNameRange     '1.0.2',
+71 silly addNameRange     '1.1.0',
+71 silly addNameRange     '1.1.1',
+71 silly addNameRange     '1.1.2',
+71 silly addNameRange     '1.1.3',
+71 silly addNameRange     '1.1.4',
+71 silly addNameRange     '1.2.0',
+71 silly addNameRange     '1.2.1',
+71 silly addNameRange     '1.3.0',
+71 silly addNameRange     '1.3.1',
+71 silly addNameRange     '1.3.2',
+71 silly addNameRange     '1.3.3',
+71 silly addNameRange     '1.3.4',
+71 silly addNameRange     '1.3.5',
+71 silly addNameRange     '1.3.6',
+71 silly addNameRange     '1.3.7',
+71 silly addNameRange     '1.4.0',
+71 silly addNameRange     '1.4.1',
+71 silly addNameRange     '1.5.0-alpha',
+71 silly addNameRange     '1.5.0-beta',
+71 silly addNameRange     '1.5.0-beta-2',
+71 silly addNameRange     '1.5.0',
+71 silly addNameRange     '1.6.0-alpha-1',
+71 silly addNameRange     '1.6.0-alpha-2',
+71 silly addNameRange     '1.6.0-alpha-3',
+71 silly addNameRange     '1.6.0-beta-1',
+71 silly addNameRange     '1.6.0-beta-2',
+71 silly addNameRange     '1.6.0-beta-3',
+71 silly addNameRange     '1.6.0-beta4',
+71 silly addNameRange     '1.6.0',
+71 silly addNameRange     '1.7.0-alpha1',
+71 silly addNameRange     '1.7.0-alpha2',
+71 silly addNameRange     '2.0.0-alpha1',
+71 silly addNameRange     '2.0.0-alpha2',
+71 silly addNameRange     '1.7.0-alpha3',
+71 silly addNameRange     '2.0.0-alpha3',
+71 silly addNameRange     '1.7.0-beta.0',
+71 silly addNameRange     '2.0.0-beta.0',
+71 silly addNameRange     '1.7.0-beta.1',
+71 silly addNameRange     '2.0.0-beta.1',
+71 silly addNameRange     '1.7.0-beta.2',
+71 silly addNameRange     '2.0.0-beta.2',
+71 silly addNameRange     '1.7.0-beta.3b',
+71 silly addNameRange     '2.0.0-beta.3',
+71 silly addNameRange     '1.7.0-beta.4a',
+71 silly addNameRange     '2.0.0-beta.4',
+71 silly addNameRange     '1.7.0-beta.5',
+71 silly addNameRange     '2.0.0-beta.5',
+71 silly addNameRange     '1.7.0-beta6',
+71 silly addNameRange     '2.0.0-beta.6',
+71 silly addNameRange     '1.7.0-beta7',
+71 silly addNameRange     '2.0.0-beta.7',
+71 silly addNameRange     '2.0.0-beta.8',
+71 silly addNameRange     '1.7.0-beta8',
+71 silly addNameRange     '1.7.0-rc1',
+71 silly addNameRange     '2.0.0-dev1',
+71 silly addNameRange     '1.7.0-rc2',
+71 silly addNameRange     '2.0.0-dev2',
+71 silly addNameRange     '1.7.0-rc3',
+71 silly addNameRange     '2.0.0-dev3',
+71 silly addNameRange     '1.7.0-rc4',
+71 silly addNameRange     '2.0.0-dev4',
+71 silly addNameRange     '2.0.0-dev5',
+71 silly addNameRange     '1.7.0-rc5',
+71 silly addNameRange     '1.7.0-rc6',
+71 silly addNameRange     '2.0.0-dev6',
+71 silly addNameRange     '2.0.0-dev7',
+71 silly addNameRange     '1.7.0-rc7',
+71 silly addNameRange     '2.0.0-dev8',
+71 silly addNameRange     '1.7.0-rc8',
+71 silly addNameRange     '1.7.0-rc9',
+71 silly addNameRange     '2.0.0-dev9',
+71 silly addNameRange     '2.0.0-dev10',
+71 silly addNameRange     '1.7.0',
+71 silly addNameRange     '1.7.1',
+71 silly addNameRange     '1.7.2',
+71 silly addNameRange     '1.7.3',
+71 silly addNameRange     '2.0.0-dev11',
+71 silly addNameRange     '1.7.4',
+71 silly addNameRange     '1.7.5',
+71 silly addNameRange     '1.7.7',
+71 silly addNameRange     '1.7.8',
+71 silly addNameRange     '1.7.9',
+71 silly addNameRange     '2.0.0-dev12',
+71 silly addNameRange     '1.7.10',
+71 silly addNameRange     '2.0.0-dev13',
+71 silly addNameRange     '2.0.0-rc1',
+71 silly addNameRange     '2.0.0-rc2' ] ]
+72 verbose addNamed [ 'sequelize', '2.0.0-rc2' ]
+73 verbose addNamed [ '2.0.0-rc2', '2.0.0-rc2' ]
+74 silly lockFile 8d5b505a-sequelize-2-0-0-rc2 sequelize@2.0.0-rc2
+75 verbose lock sequelize@2.0.0-rc2 /home/unai/.npm/8d5b505a-sequelize-2-0-0-rc2.lock
+76 silly lockFile 8d5b505a-sequelize-2-0-0-rc2 sequelize@2.0.0-rc2
+77 silly lockFile 8d5b505a-sequelize-2-0-0-rc2 sequelize@2.0.0-rc2
+78 silly lockFile 57143dcb-sequelize sequelize@
+79 silly lockFile 57143dcb-sequelize sequelize@
+80 http 404 https://registry.npmjs.org/nodemonnpm
+81 verbose headers { date: 'Mon, 10 Nov 2014 08:20:59 GMT',
+81 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+81 verbose headers   'content-type': 'application/json',
+81 verbose headers   'cache-control': 'max-age=0',
+81 verbose headers   'content-length': '52',
+81 verbose headers   'accept-ranges': 'bytes',
+81 verbose headers   via: '1.1 varnish',
+81 verbose headers   age: '0',
+81 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
+81 verbose headers   'x-cache': 'MISS',
+81 verbose headers   'x-cache-hits': '0',
+81 verbose headers   'x-timer': 'S1415607659.627780,VS0,VE85',
+81 verbose headers   'keep-alive': 'timeout=10, max=50',
+81 verbose headers   connection: 'Keep-Alive' }
+82 silly registry.get cb [ 404,
+82 silly registry.get   { date: 'Mon, 10 Nov 2014 08:20:59 GMT',
+82 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+82 silly registry.get     'content-type': 'application/json',
+82 silly registry.get     'cache-control': 'max-age=0',
+82 silly registry.get     'content-length': '52',
+82 silly registry.get     'accept-ranges': 'bytes',
+82 silly registry.get     via: '1.1 varnish',
+82 silly registry.get     age: '0',
+82 silly registry.get     'x-served-by': 'cache-lcy1131-LCY',
+82 silly registry.get     'x-cache': 'MISS',
+82 silly registry.get     'x-cache-hits': '0',
+82 silly registry.get     'x-timer': 'S1415607659.627780,VS0,VE85',
+82 silly registry.get     'keep-alive': 'timeout=10, max=50',
+82 silly registry.get     connection: 'Keep-Alive' } ]
+83 silly lockFile 27a59379-nodemonnpm nodemonnpm@
+84 silly lockFile 27a59379-nodemonnpm nodemonnpm@
+85 http 200 https://registry.npmjs.org/install
+86 silly registry.get cb [ 200,
+86 silly registry.get   { date: 'Mon, 10 Nov 2014 08:20:59 GMT',
+86 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+86 silly registry.get     etag: '"8F8X8ZU9DTDNUIWOHNVIEZ80Z"',
+86 silly registry.get     'content-type': 'application/json',
+86 silly registry.get     'cache-control': 'max-age=60',
+86 silly registry.get     'content-length': '27648',
+86 silly registry.get     'accept-ranges': 'bytes',
+86 silly registry.get     via: '1.1 varnish',
+86 silly registry.get     age: '0',
+86 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+86 silly registry.get     'x-cache': 'HIT',
+86 silly registry.get     'x-cache-hits': '1',
+86 silly registry.get     'x-timer': 'S1415607659.567574,VS0,VE348',
+86 silly registry.get     vary: 'Accept',
+86 silly registry.get     'keep-alive': 'timeout=10, max=50',
+86 silly registry.get     connection: 'Keep-Alive' } ]
+87 silly addNameRange number 2 { name: 'install', range: '*', hasData: true }
+88 silly addNameRange versions [ 'install',
+88 silly addNameRange   [ '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7' ] ]
+89 verbose addNamed [ 'install', '0.1.7' ]
+90 verbose addNamed [ '0.1.7', '0.1.7' ]
+91 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+92 verbose lock install@0.1.7 /home/unai/.npm/b58c0e47-install-0-1-7.lock
+93 silly lockFile d4a08d30-js-org-install-install-0-1-7-tgz https://registry.npmjs.org/install/-/install-0.1.7.tgz
+94 verbose lock https://registry.npmjs.org/install/-/install-0.1.7.tgz /home/unai/.npm/d4a08d30-js-org-install-install-0-1-7-tgz.lock
+95 verbose addRemoteTarball [ 'https://registry.npmjs.org/install/-/install-0.1.7.tgz',
+95 verbose addRemoteTarball   '30a90982c625506cb60c33f2a002db979a09b0ea' ]
+96 info retry fetch attempt 1 at 09:20:58
+97 verbose fetch to= /tmp/npm-3148-R3SBZSeA/registry.npmjs.org/install/-/install-0.1.7.tgz
+98 http GET https://registry.npmjs.org/install/-/install-0.1.7.tgz
+99 http 200 https://registry.npmjs.org/install/-/install-0.1.7.tgz
+100 silly lockFile d4a08d30-js-org-install-install-0-1-7-tgz https://registry.npmjs.org/install/-/install-0.1.7.tgz
+101 silly lockFile d4a08d30-js-org-install-install-0-1-7-tgz https://registry.npmjs.org/install/-/install-0.1.7.tgz
+102 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+103 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+104 silly lockFile cadb329f-install install@
+105 silly lockFile cadb329f-install install@
+106 error 404 404 Not Found: nodemonnpm
+106 error 404
+106 error 404 'nodemonnpm' is not in the npm registry.
+106 error 404 You should bug the author to publish it
+106 error 404
+106 error 404 Note that you can also install from a
+106 error 404 tarball, folder, or http url, or git url.
+107 error System Linux 3.13.0-37-generic
+108 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "nodemonnpm" "install" "--save" "sequelize"
+109 error cwd /home/unai/Documentos/Katez
+110 error node -v v0.10.33
+111 error npm -v 1.4.28
+112 error code E404
+113 verbose exit [ 1, true ]

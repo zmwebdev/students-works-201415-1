@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<script type="text/javascript" src="js/registro.js"></script>
+    <script type="text/javascript" src="js/valida.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <meta charset="utf-8">
+
+    <title>Bandate</title>
+
+    <meta name="description" content="buscador de conciertos">
+    <meta name="author" content="Amaia & Iñigo">
+</head>
+ 
+<body onload="setInvisible();">
+
+<header>
+    <img src="img/logo1.png">
+  </header>
+    <div id="loginDiv">
+        <form id="login" method="post" action="/login">
+            <input type="email" name="usuario" placeholder="Email">
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="submit" value="Conectarse" >
+        </form>
+    </div>
+    <div id="formDiv">
+        <form id="formRegistro" onsubmit="return valida()" action="/registro" method="post">
+          <p>
+            <input type="email" id="mail" name="mail" placeholder="Introducir email"/>
+            <br />
+            <input type="password" id="contra" name="contra" required="required" placeholder="Nueva contraseña"/>
+            <br />
+            <input type="password" id="contra2" name="contra2" required="required" placeholder="Repetir contraseña"/>
+            <br />
+            <input type="submit" value="Registrarse" />
+            <input type="reset" value="Borrar" /> 
+          </p>
+        </form> 
+    </div>
+    <div id="atras">
+      <button onclick="setInvisible()">+Login</button>
+    </div>
+    <div id="registro">
+      <button onclick="setVisible()">+Regístrate</button>
+    </div>
+</body>
+     
+</html>

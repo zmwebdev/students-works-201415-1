@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administrador</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/registro.js"></script>
+</head>
+<body background="/img/images/conciertos.png" no-repeat center center fixed>
+
+	<!--MENU RESPONSIVE-->
+    <nav class="clearfix">
+
+    <!--Logo-->
+        <div id="logo">
+            <img href="/inicio" src="img/logotxiki.png" />
+        </div>
+
+        <div id="buscador">
+             <form method="get" action="/search" id="search">
+                <input name="q" type="text" size="40" placeholder="Search..." />
+            </form>
+        </div>
+
+        <ul class="clearfix" id="botoiak">
+            <li><a href="goanadir">Añadir</a></li>
+            <li><a href="gomodificar">Modificar</a></li>
+            <li><a href="golistar">Listar</a></li>
+            <li><a href="goborrar">Borrar</a></li>
+            <li  id="buscador2">
+                <div>
+                 <form method="get" action="/search" id="search">
+                  <input name="q" type="text" size="40" placeholder="Search..." />
+                 </form>
+                </div>    
+            </li>
+
+        </ul>
+        <a href="#" id="pull"><img src="img/logotxiki.png" /></a>
+        <!--Buscador-->
+        
+        <!--Final buscador-->
+    </nav>
+    <!--final menu-->
+    <form class="formAnadir" action="/modificar" method="post" id="modificar">
+        {{#if conciertos}} 
+            {{#each conciertos}}
+                <input type="radio" name="localidad" value="{{conciertos}}"><label class="loc"> {{localizacion}}</label><br />
+            {{/each}}
+        {{/if}}
+        <input type="submit" value="modificar">
+    </form>
+</body>
+</html>

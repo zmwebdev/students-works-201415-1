@@ -1,0 +1,34 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	}
+body {
+	background-color: #FFF;
+	text-align:center;
+}
+#logo{
+	margin:auto;}
+#botones{
+	position:relative;
+	}
+#btnlogin,#btnsign{
+	border-radius:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	width:100px;
+	border:0;
+	height:30px;
+	font-weight:bold;}
+#btnlogin:hover,#btnsign:hover{
+	opacity:0.7;}
+#btnlogin{
+	background-color:#004c98;
+	color:#db9600;
+	}
+#btnsign{
+	margin-left:1%;
+	background-color:#db9600;
+	color:#004c98;
+	}
+footer{
+	clear:both;}
